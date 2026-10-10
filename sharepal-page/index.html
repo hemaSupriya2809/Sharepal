@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Rent gaming gadgets in Bangalore | Zero Deposit Rentals | SharePal</title>
+  <meta name="description"
+    content="Rent gaming gadgets in Bangalore from SharePal - India's most trusted lifestyle gear rental platform. Zero Deposit | Free Delivery | Excellent Quality | Pay on Delivery">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Ubuntu:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4C187C">
+</head>
+
+<body>
+  <header class="hdr">
+    <div class="in">
+      <a class="logo" href="#">Share<i>Pal</i></a>
+      <div class="pill"><button class="seg" id="cityBtn">📍 <span id="cityLoc">Bangalore</span> ▾</button><button
+          class="seg" id="dDel">🗓 <span>Delivery Date</span></button><button class="seg" id="dPick">🗓 <span>Pickup
+            Date</span></button><button class="sel" id="selBtn">🗓 Select</button></div>
+      <div class="hr">
+        <button class="ic" id="themeToggle" aria-label="Toggle Dark Mode" style="margin-right:8px; filter:none; font-size:18px;">🌙</button>
+        <button class="ic" id="searchBtn" aria-label="Search">🔍</button>
+        <button class="ic cart" id="cartBtn" aria-label="Cart">🛒<b id="cartN" hidden>0</b></button><button class="login" id="loginBtn"><span
+            class="av">👤</span>Hi, Login</button></div>
+    </div>
+  </header>
+  <nav class="tabs" id="tabs"></nav>
+  <div class="mega" id="mega"></div>
+  <div class="shell">
+    <aside class="side" id="side"></aside>
+    <main class="main">
+      <section class="banner">
+        <h1>Gaming Consoles</h1>
+        <p>Rent the latest gaming gadgets from <em>SharePal</em> PS5, Xbox, Oculus VR, Racing Wheel on rent.</p>
+        <div class="brands"><span>✕ XBOX</span><span>PlayStation5</span><span>∞ Meta</span></div>
+      </section>
+      <div class="titlebar">
+        <h2>Gaming Gadgets On Rent</h2><span id="total"></span>
+      </div>
+      <section class="grid" id="grid"></section>
+      <div class="more">
+        <p id="showing"></p><button id="moreBtn">Show More</button>
+      </div>
+      <section class="rec">
+        <h4>Can't find what you're looking for?</h4>
+        <form id="recForm"><label>Tell us what gear we should launch next<input required
+              placeholder="Enter product name"></label><label>What will you use this for?<input
+              placeholder="e.g. trekking trip, weekend gaming, party"></label><button>Submit Recommendation</button>
+        </form>
+      </section>
+      <section class="faq">
+        <h3>Frequently Asked Questions (FAQs)</h3>
+        <details>
+          <summary>How can I rent from SharePal?</summary>
+          <p>Pick your product, choose delivery and pickup dates, complete verification and pay. We deliver to your
+            doorstep.</p>
+        </details>
+        <details>
+          <summary>If I rent multiple products, do I need to extend the rental duration for all or partial extension is
+            possible?</summary>
+          <p>Partial extension is possible. You can extend individual products from your orders page.</p>
+        </details>
+        <details>
+          <summary>When does the rental start?</summary>
+          <p>The rental starts on the delivery date you select.</p>
+        </details>
+        <details>
+          <summary>What will be the condition of the products at the time of delivery?</summary>
+          <p>All products are sanitised, tested and delivered in working condition.</p>
+        </details>
+        <details>
+          <summary>Why is verification required?</summary>
+          <p>Verification keeps the community safe and lets us hand over high-value gear with confidence.</p>
+        </details>
+        <button class="vmore">View more FAQ's</button>
+      </section>
+      <nav class="crumbs"><a href="#">Bangalore</a> › <b>Gaming gadgets on rent</b></nav>
+    </main>
+  </div>
+  <section class="rev">
+    <h2>Served more than <span>1 Lakh Orders</span></h2>
+    <div class="track" id="track"></div>
+    <div class="stats">
+      <div><b class="c1">250Cr+</b>Saved Together</div>
+      <div><b class="c2">4.5M Kg</b>CO₂E Emissions Saved</div>
+      <div><b class="c1">100K+</b>Products In Circulation</div>
+    </div>
+  </section>
+  <footer>
+    <div class="fin" id="fcols"></div>
+    <div class="seo"><a href="#">Renting from SharePal in Bangalore</a>
+      <p>Discover the convenience of renting from SharePal, your trusted partner in Bangalore for all your rental needs.
+        With free home delivery and pickup services, flexible rental tenures, and an easy-to-use platform, renting has
+        never been easier.</p>
+    </div>
+    <div class="fbot"><a class="logo" href="#">Share<i>Pal</i></a>
+      <div class="cols" id="fcols2"></div>
+      <div class="copy"><a href="#top">Go up ⌃</a><span>© 2026 SharePal (assignment recreation)</span><span>Made with ❤
+          for India</span></div>
+    </div>
+  </footer>
+  <button class="float" id="floatBtn">🗓 Select rental dates to view prices</button>
+  <button class="chat" aria-label="Chat">💬</button>
+  <div id="chatWin" class="chat-win">
+    <div class="chat-head"><b>SharePal Support</b><button type="button" class="x-btn"
+        style="position:static;width:24px;height:24px;background:none;color:#fff;font-size:18px"
+        id="closeChat">✕</button></div>
+    <div class="chat-body" id="chatBody">
+      <div class="msg bot">Hi there! 👋 How can I help you with your rental today?</div>
+    </div>
+    <form class="chat-foot" id="chatForm"><input type="text" id="chatInput" placeholder="Type a message..."
+        required><button type="submit">➤</button></form>
+  </div>
+  <dialog id="dlg">
+    <form method="dialog"><button class="x-btn" value="x" aria-label="Close" formnovalidate>✕</button>
+      <h3>Select rental dates</h3><label>Delivery date<input type="date" id="d1" required></label><label>Pickup
+        date<input type="date" id="d2" required></label>
+      <p id="err"></p>
+      <div class="act"><button id="ok" value="ok" style="width:100%">Apply</button></div>
+    </form>
+  </dialog>
+  <dialog id="cityDlg">
+    <form method="dialog"><button class="x-btn" value="x" aria-label="Close" formnovalidate>✕</button>
+      <h3>Select your city</h3>
+      <div style="display:grid;gap:10px;grid-template-columns:1fr 1fr;margin-top:20px"><button type="button"
+          class="ghost" onclick="setCity('Bangalore')">Bangalore</button><button type="button" class="ghost"
+          onclick="setCity('Mumbai')">Mumbai</button><button type="button" class="ghost"
+          onclick="setCity('Delhi')">Delhi</button><button type="button" class="ghost"
+          onclick="setCity('Pune')">Pune</button><button type="button" class="ghost"
+          onclick="setCity('Hyderabad')">Hyderabad</button><button type="button" class="ghost"
+          onclick="setCity('Chennai')">Chennai</button></div>
+    </form>
+  </dialog>
+  <dialog id="searchDlg">
+    <form method="dialog"><button class="x-btn" value="x" aria-label="Close" formnovalidate>✕</button>
+      <h3>Search Products</h3><input type="text" id="searchInput" placeholder="Search for PS5, Xbox, VR..."
+        style="margin-bottom:12px">
+      <div class="act"><button type="button" id="doSearch"
+          style="width:100%;background:var(--navy);color:#fff;padding:10px 24px;border-radius:99px;font-weight:600;border:none">Search</button>
+      </div>
+    </form>
+  </dialog>
+  <dialog id="cartDlg">
+    <form method="dialog"><button class="x-btn" value="x" aria-label="Close" formnovalidate>✕</button>
+      <h3>Your Cart</h3>
+      <div id="cartItems" style="max-height:50vh;overflow:auto;margin:16px 0;font-size:13px;color:var(--ink)"></div>
+      <div id="cartTotal" style="font-weight:700;font-size:16px;text-align:right;margin-bottom:16px"></div>
+      <div class="act"><button type="button" id="goCheckoutBtn"
+          style="width:100%;background:var(--navy);color:#fff;padding:10px 24px;border-radius:99px;font-weight:600;border:none">Proceed
+          to Checkout</button></div>
+    </form>
+  </dialog>
+  <dialog id="loginDlg">
+    <form method="dialog"><button class="x-btn" value="x" aria-label="Close" formnovalidate>✕</button>
+      <div id="loginStep1">
+        <h3 style="margin-bottom:8px" id="loginTitle">Login</h3>
+        <p style="font-size:13px;color:var(--mute);margin-bottom:16px">Get access to your orders and wishlist.</p>
+        <label>Mobile Number<input type="tel" id="loginPhone" placeholder="Enter 10-digit mobile number"
+            pattern="[0-9]{10}" required></label>
+        <p id="loginErr" style="color:#dc2626;font-size:12px;margin:4px 0;min-height:1.2em"></p>
+        <div class="act"><button type="button" id="btnSendOtp"
+            style="width:100%;background:var(--navy);color:#fff;padding:10px 24px;border-radius:99px;font-weight:600;border:none">Send
+            OTP</button></div>
+        <p style="text-align:center;font-size:13px;margin-top:16px"><a href="#" id="toggleSignup"
+            style="color:var(--navy);font-weight:600">New here? Create Account</a></p>
+      </div>
+      <div id="loginStep2" hidden>
+        <h3 style="margin-bottom:8px">Verify OTP</h3>
+        <p style="font-size:13px;color:var(--mute);margin-bottom:16px" id="otpSentMsg"></p><label>Enter 4-digit
+          OTP<input type="text" id="loginOtp" placeholder="1 2 3 4" pattern="[0-9]{4}" maxlength="4"
+            style="letter-spacing:4px;font-weight:600;text-align:center"></label>
+        <p id="otpErr" style="color:#dc2626;font-size:12px;margin:4px 0;min-height:1.2em"></p>
+        <div class="act"><button type="button" id="btnVerifyOtp"
+            style="width:100%;background:var(--navy);color:#fff;padding:10px 24px;border-radius:99px;font-weight:600;border:none">Verify
+            & Login</button></div>
+      </div>
+    </form>
+  </dialog>
+  <dialog id="checkoutDlg">
+    <form method="dialog"><button class="x-btn" value="x" aria-label="Close" formnovalidate>✕</button>
+      <h3 style="margin-bottom:8px">Checkout</h3>
+      <div id="checkoutSummary"
+        style="font-size:14px;margin-bottom:16px;background:#f8f9fa;padding:12px;border-radius:8px"></div>
+      <label>Delivery Address<textarea id="checkoutAddr" rows="3" placeholder="Enter complete address in Bangalore..."
+          style="width:100%;padding:10px;border:1px solid var(--ln);border-radius:10px;font:inherit;margin-top:6px;resize:none"
+          required></textarea></label>
+      <div style="margin-top:16px"><button type="submit" id="payBtn"
+          style="width:100%;background:#059669;color:#fff;padding:12px 24px;border-radius:99px;font-weight:700;border:none;font-size:16px">Pay
+          Now</button></div>
+    </form>
+  </dialog>
+  <div id="cmpBar" class="cmp-bar" hidden>
+    <div style="flex:1" id="cmpText">1 item selected to compare</div>
+    <button id="cmpGo" disabled>Compare</button>
+    <button id="cmpClose" class="x-btn" style="position:static;width:28px;height:28px;background:none;color:#fff">✕</button>
+  </div>
+  <dialog id="cmpDlg">
+    <form method="dialog"><button class="x-btn" value="x" aria-label="Close" formnovalidate>✕</button>
+      <h3 style="margin-bottom:16px">Compare Products</h3>
+      <div id="cmpContent" style="display:grid;gap:16px;text-align:center;overflow-x:auto"></div>
+    </form>
+  </dialog>
+  <div class="toast" id="toast"></div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

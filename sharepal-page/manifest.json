@@ -1,0 +1,17 @@
+{
+  "name": "SharePal Bangalore",
+  "short_name": "SharePal",
+  "description": "Gaming Gadgets on Rent in Bangalore",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4C187C",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
